@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ngDialog</artifactId>
-    <version>0.3.9-SNAPSHOT</version>
+    <version>0.3.12-SNAPSHOT</version>
     <name>ngDialog</name>
     <description>WebJar for ngDialog</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>0.3.8</upstream.version>
+        <upstream.version>0.3.12</upstream.version>
         <upstream.url>https://raw.githubusercontent.com/likeastore/ngDialog/${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
@@ -76,19 +76,19 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}/js" />
-                                <mkdir dir="${destDir}/css/myth" />
-                                <get src="${upstream.url}/js/ngDialog.js" dest="${destDir}/js" />
-                                <get src="${upstream.url}/js/ngDialog.min.js" dest="${destDir}/js" />
-                                <get src="${upstream.url}/css/ngDialog-theme-default.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/ngDialog-theme-default.min.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/ngDialog-theme-plain.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/ngDialog-theme-plain.min.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/ngDialog.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/ngDialog.min.css" dest="${destDir}/css" />
-                                <get src="${upstream.url}/css/myth/ngDialog-theme-default.css" dest="${destDir}/css/myth" />
-                                <get src="${upstream.url}/css/myth/ngDialog-theme-plain.css" dest="${destDir}/css/myth" />
-                                <get src="${upstream.url}/css/myth/ngDialog.css" dest="${destDir}/css/myth" />
+                                <mkdir dir="${destDir}/js"/>
+                                <mkdir dir="${destDir}/css/myth"/>
+                                <get src="${upstream.url}/js/ngDialog.js" dest="${destDir}/js"/>
+                                <get src="${upstream.url}/js/ngDialog.min.js" dest="${destDir}/js"/>
+                                <get src="${upstream.url}/css/ngDialog-theme-default.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/ngDialog-theme-default.min.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/ngDialog-theme-plain.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/ngDialog-theme-plain.min.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/ngDialog.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/ngDialog.min.css" dest="${destDir}/css"/>
+                                <get src="${upstream.url}/css/myth/ngDialog-theme-default.css" dest="${destDir}/css/myth"/>
+                                <get src="${upstream.url}/css/myth/ngDialog-theme-plain.css" dest="${destDir}/css/myth"/>
+                                <get src="${upstream.url}/css/myth/ngDialog.css" dest="${destDir}/css/myth"/>
                             </target>
                         </configuration>
                     </execution>
@@ -98,13 +98,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.2</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
