@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ngDialog</artifactId>
-    <version>0.3.12-SNAPSHOT</version>
+    <version>0.3.12</version>
     <name>ngDialog</name>
     <description>WebJar for ngDialog</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/ngDialog</url>
         <connection>scm:git:https://github.com/webjars/ngDialog.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ngDialog.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ngDialog-0.3.12</tag>
     </scm>
     
     <dependencies>
@@ -76,19 +76,19 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}/js"/>
-                                <mkdir dir="${destDir}/css/myth"/>
-                                <get src="${upstream.url}/js/ngDialog.js" dest="${destDir}/js"/>
-                                <get src="${upstream.url}/js/ngDialog.min.js" dest="${destDir}/js"/>
-                                <get src="${upstream.url}/css/ngDialog-theme-default.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/ngDialog-theme-default.min.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/ngDialog-theme-plain.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/ngDialog-theme-plain.min.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/ngDialog.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/ngDialog.min.css" dest="${destDir}/css"/>
-                                <get src="${upstream.url}/css/myth/ngDialog-theme-default.css" dest="${destDir}/css/myth"/>
-                                <get src="${upstream.url}/css/myth/ngDialog-theme-plain.css" dest="${destDir}/css/myth"/>
-                                <get src="${upstream.url}/css/myth/ngDialog.css" dest="${destDir}/css/myth"/>
+                                <mkdir dir="${destDir}/js" />
+                                <mkdir dir="${destDir}/css/myth" />
+                                <get src="${upstream.url}/js/ngDialog.js" dest="${destDir}/js" />
+                                <get src="${upstream.url}/js/ngDialog.min.js" dest="${destDir}/js" />
+                                <get src="${upstream.url}/css/ngDialog-theme-default.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/ngDialog-theme-default.min.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/ngDialog-theme-plain.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/ngDialog-theme-plain.min.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/ngDialog.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/ngDialog.min.css" dest="${destDir}/css" />
+                                <get src="${upstream.url}/css/myth/ngDialog-theme-default.css" dest="${destDir}/css/myth" />
+                                <get src="${upstream.url}/css/myth/ngDialog-theme-plain.css" dest="${destDir}/css/myth" />
+                                <get src="${upstream.url}/css/myth/ngDialog.css" dest="${destDir}/css/myth" />
                             </target>
                         </configuration>
                     </execution>
