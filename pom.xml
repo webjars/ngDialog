@@ -24,7 +24,8 @@
         <requirejs>
             {
                 "paths": {
-                    "ngDialog": "ngDialog"
+                    "ngDialog": "js/ngDialog",
+                    "ngDialog-min" : "js/ngDialog.min"
                 },
                 "shim": {
                     "ngDialog": ["angular"]
