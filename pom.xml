@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ngDialog</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.4.0</version>
     <name>ngDialog</name>
     <description>WebJar for ngDialog</description>
     <url>http://webjars.org</url>
@@ -54,7 +54,7 @@
         <url>http://github.com/webjars/ngDialog</url>
         <connection>scm:git:https://github.com/webjars/ngDialog.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ngDialog.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ngDialog-1.4.0</tag>
     </scm>
     
     <dependencies>
